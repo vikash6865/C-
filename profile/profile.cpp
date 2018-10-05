@@ -1,3 +1,4 @@
+// program to check diension of profile picture.
 #include<iostream>
 using namespace std;
 

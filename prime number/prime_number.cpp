@@ -1,3 +1,4 @@
+// program to check whether the entered number is prime or not.
 #include<iostream>
 #include<math.h>
 using namespace std;
