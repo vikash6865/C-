@@ -3,8 +3,11 @@
 using namespace std;
 
 int main(){
-    int l,r,k,diff;
+    int l,r,k,diff,count=0;
     cin>>l>>r>>k;
-    diff=abs(r-l);
-    cout<<diff<<endl;
+    for(int i=l; i<r; i++){
+        if(i%k==0)
+            count++;
+    }
+    cout<<count<<endl;
 }
