@@ -7,7 +7,7 @@ int main(){
     cin>>d;
      while(d>=1){
          cin>>r>>x;
-         cir=2*3.14*r;
+         cir=(2*22*r)/7;
          lap=(100*x)/cir;
          if(lap>=1)
             t++;
