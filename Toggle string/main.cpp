@@ -1,22 +1,25 @@
-// prgram to toggle a string between its lowercase and uppercase characters.
 #include<iostream>
-#include<string>
+#include<string.h>
 using namespace std;
-
-int main(){
-    string str;
-    cout<<"Enter a string\n";
-    cin>>str;
-    for(int i=0; i<str.length(); ++i)
+int main()
+{
+    char s[100];
+    cin>>s;
+    char c;
+    int n;
+    n=strlen(s);
+    while(n>0)
+    { 
+        c=s[n-1];
+        if(islower(c))
         {
-            if(str[i]>=65 && str[i]<=90)
-                {
-                    str[i]+=32;
-                }
-            else if(str[i]>=97 && str[i]<=122)
-                {
-                    str[i]-=32;
-                }
+            s[n-1]=toupper(c);
         }
-    cout<<"String after toggle: "<<str<<endl;   
+        else
+        {
+            s[n-1]=tolower(c);
+        }
+        n--;
+    }
+    cout<<s;
 }
